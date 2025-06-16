@@ -174,7 +174,7 @@
     \bfseries
     \begin{tabular}{rl}
       \begin{picture}(25pt,15pt)
-        \put(0,-8pt){\includegraphics[width=30pt]{images/hcmut-logo.png}}
+        \put(0,-8pt){\includegraphics[width=35pt]{images/hcmut-logo.png}}
       \end{picture}
       \begin{tabular}{l}
         \ttfamily\@uniname  \\
@@ -190,7 +190,7 @@
         \ttfamily\@deptname \\
       \end{tabular}
       \begin{picture}(25pt,15pt)
-        \put(0,-8pt){\includegraphics[width=30pt]{images/hcmut-logo.png}}
+        \put(0,-8pt){\includegraphics[width=35pt]{images/hcmut-logo.png}}
       \end{picture}
     \end{tabular}
   }
@@ -203,7 +203,7 @@
         \ttfamily\@deptname \\
       \end{tabular}
       \begin{picture}(25pt,15pt)
-        \put(0,-8pt){\includegraphics[width=30pt]{hcmut-logo.png}}
+        \put(0,-8pt){\includegraphics[width=35pt]{hcmut-logo.png}}
       \end{picture}
     \end{tabular}
   }
