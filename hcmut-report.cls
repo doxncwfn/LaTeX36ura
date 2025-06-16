@@ -41,8 +41,8 @@
 
 % Custom commands
 \newcommand{\@upperuniname}{Đại học quốc gia Thành phố Hồ Chí Minh}
-\newcommand{\@uniname}{Trường đại học Bách Khoa}
-\newcommand{\@deptname}{Khoa Khoa học \& Kỹ thuật máy tính}
+\newcommand{\@uniname}{Trường Đời 36}
+\newcommand{\@deptname}{Tộc Con Mãi Đỉnh}
 \newcommand{\deptname}[1]{\renewcommand{\@deptname}{#1}}
 \newcommand{\@coursename}{Course name}
 \newcommand{\coursename}[1]{\renewcommand{\@coursename}{#1}}
@@ -168,53 +168,6 @@
 
   \clearpage
   \pagestyle{fancy}
-
-  % \begin{center}
-  %   \Large\textbf{BẢNG PHÂN CÔNG CÔNG VIỆC}
-  %   \begin{table}[H]
-  %     \centering
-  %     \begin{tabular}{|c|l|c|c|c|}
-  %       \hline
-  %       \textbf{STT} & \textbf{Họ và tên}     & \textbf{MSSV} & \textbf{Phân công}              & \textbf{Tiến độ} \\
-  %       \hline
-  %       1            & Doãn Phương Hùng Cường & 2310381       & Hậu kiểm, tổng hợp kết quả      & 100\%            \\
-  %       \hline
-  %       2            & Nguyễn Phan Tuấn Duy   & 2310491       & Xây dựng model dựa trên dữ liệu & 100\%            \\
-  %       \hline
-  %       3            & Lê Đình Đức            & 2310774       & Xây dựng model dựa trên dữ liệu & 100\%            \\
-  %       \hline
-  %       4            & Phạm Đình Được         & 2310761       & Huấn luyện model                & 100\%            \\
-  %       \hline
-  %       5            & Bành Phú Hội           & 2311111       & Xây dựng model dựa trên dữ liệu & 100\%            \\
-  %       \hline
-  %       6            & Lê Văn Đình Huy        & 2311160       & Huấn luyện model                & 100\%            \\
-  %       \hline
-  %       7            & Nguyễn Thành Minh Khôi & 2311687       & Huấn luyện model                & 100\%            \\
-  %       \hline
-  %       8            & Hà Cao Đức Minh        & 2312059       & Xây dựng model dựa trên dữ liệu & 100\%            \\
-  %       \hline
-  %       9            & Phạm Đình Phương Nam   & 2312186       & Tiền xử lý và phân tích dữ liệu & 100\%            \\
-  %       \hline
-  %       10           & Ôn Hà Ngọc Như         & 2312538       & \makecell{- Tối ưu giải thuật                      \\ - Kiểm tra tính chính xác} & 100\%            \\
-  %       \hline
-  %       11           & Mạch Văn Phú           & 2333448       & \makecell{- Tối ưu giải thuật                      \\ - Kiểm tra tính chính xác} & 100\%            \\
-  %       \hline
-  %       12           & Đỗ Hồng Phúc           & 2312672       & Xây dựng model dựa trên dữ liệu & 100\%            \\
-  %       \hline
-  %       13           & Vũ Lê Hà Phương        & 2312765       & Tiền xử lý và phân tích dữ liệu & 100\%            \\
-  %       \hline
-  %       14           & Nguyễn Trần Phương     & 2333447       & \makecell{- Tối ưu giải thuật                      \\ - Kiểm tra tính chính xác} & 100\%            \\
-  %       \hline
-  %       15           & Nguyễn Hoàng Quân      & 2312834       & \makecell{- Tối ưu giải thuật                      \\ - Kiểm tra tính chính xác} & 100\%            \\
-  %       \hline
-  %       16           & Hồng Phi Trường        & 2313703       & Tiền xử lý và phân tích dữ liệu & 100\%            \\
-  %       \hline
-  %       17           & Nguyễn Danh Vương      & 2333478       & \makecell{- Tối ưu giải thuật                      \\ - Kiểm tra tính chính xác} & 100\%            \\
-  %       \hline
-  %     \end{tabular}
-  %     \label{tab:student_task_allocation}
-  %   \end{table}
-  % \end{center}
 }
 
 % Header and footer
@@ -226,7 +179,7 @@
     \bfseries
     \begin{tabular}{rl}
       \begin{picture}(25pt,15pt)
-        \put(0,-8pt){\includegraphics[width=20pt]{images/hcmut-logo.png}}
+        \put(0,-8pt){\includegraphics[width=30pt]{images/hcmut-logo.png}}
       \end{picture}
       \begin{tabular}{l}
         \ttfamily\@uniname  \\
@@ -242,7 +195,7 @@
         \ttfamily\@deptname \\
       \end{tabular}
       \begin{picture}(25pt,15pt)
-        \put(0,-8pt){\includegraphics[width=20pt]{images/hcmut-logo.png}}
+        \put(0,-8pt){\includegraphics[width=30pt]{images/hcmut-logo.png}}
       \end{picture}
     \end{tabular}
   }
@@ -255,7 +208,7 @@
         \ttfamily\@deptname \\
       \end{tabular}
       \begin{picture}(25pt,15pt)
-        \put(0,-8pt){\includegraphics[width=20pt]{hcmut-logo.png}}
+        \put(0,-8pt){\includegraphics[width=30pt]{hcmut-logo.png}}
       \end{picture}
     \end{tabular}
   }
