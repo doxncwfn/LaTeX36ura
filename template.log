@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.30)  16 JUN 2025 17:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Homebrew) (preloaded format=pdflatex 2024.10.30)  16 JUN 2025 18:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -710,7 +710,7 @@ Package babel Info: Making " an active character on input line 147.
 Package babel Info: Importing font and identification data for vietnamese
 (babel)             from babel-vi.ini. Reported on input line 11.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 93.
+Package hyperref Info: Option `colorlinks' set `true' on input line 91.
 ) (/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/microtype/microtype.sty
@@ -933,26 +933,26 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 ) (./template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -962,15 +962,15 @@ LaTeX Font Info:    ... okay on input line 27.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot twoside 
-* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
+* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=455.24411pt
-* \textheight=641.23584pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-15.36449pt
+* \textwidth=512.14963pt
+* \textheight=669.6886pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-29.59087pt
+* \topmargin=-29.59087pt
 * \headheight=35.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -1016,23 +1016,23 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 27.
+Package hyperref Info: Link coloring ON on input line 32.
  (./template.out) (./template.out)
 \@outlinefile=\write4
 \openout4 = `template.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 27.
-Package microtype Info: Applying patch `item' on input line 27.
-Package microtype Info: Applying patch `toc' on input line 27.
-Package microtype Info: Applying patch `eqnum' on input line 27.
-Package microtype Info: Applying patch `footnote' on input line 27.
-Package microtype Info: Applying patch `verbatim' on input line 27.
+LaTeX Info: Redefining \microtypecontext on input line 32.
+Package microtype Info: Applying patch `item' on input line 32.
+Package microtype Info: Applying patch `toc' on input line 32.
+Package microtype Info: Applying patch `eqnum' on input line 32.
+Package microtype Info: Applying patch `footnote' on input line 32.
+Package microtype Info: Applying patch `verbatim' on input line 32.
 Package microtype Info: Generating PDF output.
 Package microtype Info: No character protrusion.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 27.
+LaTeX Info: Redefining \showhyphens on input line 32.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1043,46 +1043,81 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
- on input line 27.
+ on input line 32.
 
-(./template.toc)
-\tf@toc=\write5
-\openout5 = `template.toc'.
-
- (./template.lof)
-\tf@lof=\write6
-\openout6 = `template.lof'.
-
- (./template.lot)
-\tf@lot=\write7
-\openout7 = `template.lot'.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
- (/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+<images/hcmus-logo.png, id=35, 1204.5pt x 677.53125pt>
+File: images/hcmus-logo.png Graphic file (type png)
+<use images/hcmus-logo.png>
+Package pdftex.def Info: images/hcmus-logo.png  used on input line 34.
+(pdftex.def)             Requested size: 361.35278pt x 203.26094pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
+(/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
  (/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 32.
+) [1
+
+{/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./images/hcmus-logo.png>] (./template.toc)
+\tf@toc=\write5
+\openout5 = `template.toc'.
+
+<images/hcmut-logo.png, id=50, 250.9375pt x 250.9375pt>
+File: images/hcmut-logo.png Graphic file (type png)
+<use images/hcmut-logo.png>
+Package pdftex.def Info: images/hcmut-logo.png  used on input line 36.
+(pdftex.def)             Requested size: 30.0pt x 29.99632pt.
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 36.
  (/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 32.
-<images/hcmut-logo.png, id=7, 250.9375pt x 250.9375pt>
+(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 36.
+ [2
+
+
+ <./images/hcmut-logo.png>]
 File: images/hcmut-logo.png Graphic file (type png)
 <use images/hcmut-logo.png>
-Package pdftex.def Info: images/hcmut-logo.png  used on input line 32.
+Package pdftex.def Info: images/hcmut-logo.png  used on input line 87.
 (pdftex.def)             Requested size: 30.0pt x 29.99632pt.
- [1{/usr/local/Cellar/texlive/20240312_3/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
 
- <./images/hcmut-logo.png>] 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.87 \]
+        [1
+
+]
+Overfull \hbox (0.54861pt too wide) in paragraph at lines 94--95
+[] 
+ []
+
+
+Overfull \hbox (0.54861pt too wide) in paragraph at lines 132--133
+[] 
+ []
+
+File: images/hcmut-logo.png Graphic file (type png)
+<use images/hcmut-logo.png>
+Package pdftex.def Info: images/hcmut-logo.png  used on input line 133.
+(pdftex.def)             Requested size: 30.0pt x 29.99632pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.133 \begin{center}
+                     [2]
+File: images/hcmut-logo.png Graphic file (type png)
+<use images/hcmut-logo.png>
+Package pdftex.def Info: images/hcmut-logo.png  used on input line 140.
+(pdftex.def)             Requested size: 30.0pt x 29.99632pt.
+ [3] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./template.aux)
  ***********
@@ -1090,21 +1125,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: AC21DDED4A630C57F0E4EA14D91CEB05;1052.
  ) 
 Here is how much of TeX's memory you used:
- 38652 strings out of 474116
- 864175 string characters out of 5734121
- 1930187 words of memory out of 5000000
- 60360 multiletter control sequences out of 15000+600000
- 567665 words of font info for 73 fonts, out of 8000000 for 9000
+ 38891 strings out of 474116
+ 868727 string characters out of 5734121
+ 1938187 words of memory out of 5000000
+ 60549 multiletter control sequences out of 15000+600000
+ 578483 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,24n,121p,1047b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/local/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on template.pdf (1 page, 78231 bytes).
+ 117i,25n,121p,1047b,714s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/local/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/local/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb></usr/local/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb></usr/local/Cellar/texlive/20240312_3/share/texmf-dist/fonts/type1/vntex/vnr/vntt8.pfb>
+Output written on template.pdf (5 pages, 1424220 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 14354 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
+ 30799 words of extra memory for PDF output out of 35830 (max. 10000000)
 

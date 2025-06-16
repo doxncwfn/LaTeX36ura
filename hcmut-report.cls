@@ -40,7 +40,6 @@
 }
 
 % Custom commands
-\newcommand{\@upperuniname}{Đại học quốc gia Thành phố Hồ Chí Minh}
 \newcommand{\@uniname}{Trường Đời 36}
 \newcommand{\@deptname}{Tộc Con Mãi Đỉnh}
 \newcommand{\deptname}[1]{\renewcommand{\@deptname}{#1}}
@@ -49,7 +48,6 @@
 \newcommand{\@reporttype}{Assignment Report}
 \newcommand{\reporttype}[1]{\renewcommand{\@reporttype}{#1}}
 \renewcommand{\@title}{Report title}
-\newcommand{\@advisor}{Advisor}
 \newcommand{\advisor}[1]{\renewcommand{\@advisor}{#1}}
 \newcommand{\@stuname}{STUDENT:\ H (xxxxxxx)}
 \newcommand{\stuname}[1]{\renewcommand{\@stuname}{#1}}
@@ -61,10 +59,10 @@
 % Configurations
 \geometry{
   paper=a4paper,
-  left=2.5cm,
-  right=2.5cm,
-  top=2cm,
-  bottom=2cm,
+  left=1.5cm,
+  right=1.5cm,
+  top=1.5cm,
+  bottom=1.5cm,
   includeheadfoot=true,
   headheight=35pt
 }
@@ -136,13 +134,10 @@
   \vspace*{-3\baselineskip}
 
   \begin{center}
-    \MakeUppercase{\@upperuniname}
-
     \MakeUppercase{\@uniname}
-
     \MakeUppercase{\@deptname}
     \vfill
-    \includegraphics[scale=0.45]{images/hcmut-logo.png}
+    \includegraphics[scale=0.3]{images/hcmus-logo.png}
     \vfill
     \bfseries
     \begin{tabular}{c}
@@ -158,8 +153,7 @@
     \vfill
     \mdseries
     \begin{tabular}{rll}
-      Giảng viên hướng dẫn: \@advisor \\
-      Chủ nhiệm đề tài: \@stuname     \\
+      Tộc phó: \@stuname \\
     \end{tabular}
     \vfill
 
