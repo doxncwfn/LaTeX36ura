@@ -65,7 +65,7 @@ Cho 2 biến cố $A$, $B$ với $0 < P(B) < 1$, ta có:
     P(A) = P(A \cap B) + P(A \cap \overline{B}).
 \]
 
-Mặt khác ta lại có:
+Mặt khác:
 \begin{align*}
     P(A \cap B)            & = P(B) \cdot P(A | B)                       \\
     P(A \cap \overline{B}) & = P(\overline{B}) \cdot P(A | \overline{B})
@@ -111,8 +111,6 @@ Theo công thức xác suất toàn phần:
     \mathrm{P}(A) = \mathrm{P}(B) \cdot \mathrm{P}(A | B) + \mathrm{P}(\overline{B}) \cdot \mathrm{P}(A | \overline{B})
     = 0{,}5 \cdot 0{,}65 + 0{,}5 \cdot 0{,}534 = 0{,}592.
 \]
-
-Vậy xác suất để một người Canada được chọn ngẫu nhiên là người thừa cân bằng 0{,}592 hay 59,2\%.
 \subsection{Đề thi thử trường sở}
 \exercise{
     \hspace*{0.5cm} \textcolor{orange}{\textit{Đợt 3 -- 2425 -- Nghệ An}}\\
@@ -130,11 +128,24 @@ Vậy xác suất để một người Canada được chọn ngẫu nhiên là 
         \item Tỷ lệ người bị ung thư phổi ở địa phương X là 1,5\%
         \item Dựa trên các số liệu này, tỷ lệ người bị ung thư phổi ở nhóm người có hút thuốc lá cao gấp 20 lần so với ở nhóm người không hút thuốc.
     \end{enumerate}}
-\begin{center}
-    \textcolor{blue}{Giải:}
-\end{center}
-Từ đề bài: $P(A|B)=2\%$, $P(A|\overline{B}) = 0,1\%$, $P(B) = 0.25$ $\Rightarrow a)$ Sai
 
+\begin{minipage}{0.45\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{images/1.4.1.png}
+    \end{figure}
+\end{minipage}
+\begin{minipage}{0.55\textwidth}
+    a) Từ đề bài: $\begin{cases}
+            P(A|B)=2\%                \\
+            P(A|\overline{B}) = 0,1\% \\
+            P(B) = 0.25
+        \end{cases} \Rightarrow$ \textcolor{red}{Sai}
 
+    b) $P(A|B) = \dfrac{2\%\cdot 0.25}{2\%\cdot 0.25 + 0.75\cdot 0.1\%} = \dfrac{20}{23} \approx 0.9 \Rightarrow$ \textcolor{red}{Sai}
 
+    c) $P(A) = 2\%\cdot 0.25 + 0.1\%\cdot 0.75 = 5.75\%\Rightarrow$ \textcolor{red}{Sai}
+
+    d) $\dfrac{P(A|B)}{P(A|\overline{B})} = \dfrac{2\%}{0.1\%} = 20\Rightarrow$  \textcolor{red}{Đúng}
+\end{minipage}
 \end{document}

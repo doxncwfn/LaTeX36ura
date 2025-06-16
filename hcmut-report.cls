@@ -41,7 +41,7 @@
 
 % Custom commands
 \newcommand{\@uniname}{Trường Đời 36}
-\newcommand{\@deptname}{Tộc Con Mãi Đỉnh}
+\newcommand{\@deptname}{Nợ Con Mãi Đỉnh}
 \newcommand{\deptname}[1]{\renewcommand{\@deptname}{#1}}
 \newcommand{\@coursename}{Course name}
 \newcommand{\coursename}[1]{\renewcommand{\@coursename}{#1}}
@@ -135,6 +135,7 @@
 
   \begin{center}
     \MakeUppercase{\@uniname}
+
     \MakeUppercase{\@deptname}
     \vfill
     \includegraphics[scale=0.3]{images/hcmus-logo.png}
@@ -153,7 +154,7 @@
     \vfill
     \mdseries
     \begin{tabular}{rll}
-      Tộc phó: \@stuname \\
+      Nợ phó: \@stuname \\
     \end{tabular}
     \vfill
 

@@ -1,0 +1,38 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.fls
+*.out
+*.fdb_latexmk
+*.bbl
+*.blg
+*.dvi
+*.nav
+*.snm
+*.vrb
+*.run.xml
+*.bcf
+*.idx
+*.ilg
+*.ind
+*.lol
+*.excalidraw.png
+
+# PDF output (uncomment if you don't want to track PDFs)
+# *.pdf
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor backup files
+*~
+*.swp
+*.bak
+
+# Build directory
+build/
