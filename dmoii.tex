@@ -146,7 +146,7 @@ Vì nếu ngồi chéo An thì bạn đó vẫn bị nhiễm bệnh nên xét v�
     \item Nếu An ngồi ở 1 trong 8 vị trí giữa phòng, có $8$ vị trí trong bán kính lây bệnh.
 \end{itemize}
 
-$\Rightarrow P(A) = \dfrac{4}{24}\cdot\dfrac{3}{23} + \dfrac{12}{24}\cdot\dfrac{5}{23} + \dfrac{1}{8}\cdot\dfrac{8}{23} = \dfrac{17}{69} \Rightarrow P(\overline{A}) = \dfrac{52}{69}$\\
+$\Rightarrow P(A) = \dfrac{4}{24}\cdot\dfrac{3}{23} + \dfrac{12}{24}\cdot\dfrac{5}{23} + \dfrac{8}{24}\cdot\dfrac{8}{23} = \dfrac{17}{69} \Rightarrow P(\overline{A}) = \dfrac{52}{69}$\\
 $\Rightarrow P(A|\overline{B}) = \dfrac{\dfrac{17}{69}\cdot 0.15}{\dfrac{17}{69}\cdot 0.15 + \dfrac{52}{69}\cdot0.95} \approx 0.0491 \approx 0.05$
 
 \exercise{\textcolor{orange}{\textit{Đợt 3 -- 2425 -- Nghệ An}}
@@ -183,7 +183,7 @@ $\Rightarrow P(A|\overline{B}) = \dfrac{\dfrac{17}{69}\cdot 0.15}{\dfrac{17}{69}
         \includegraphics[width=\textwidth]{images/Nghệ An 2025 - Đợt 3/NgheAn25-1.png}
     \end{figure}
 \end{minipage}
-\section{Ứng dụng tích phân}
+\newpage\section{Ứng dụng tích phân}
 \exercise{
     \textcolor{red}{\textit{Đợt 3 -- 2425 -- Nghệ An}}
 
@@ -198,6 +198,16 @@ $\Rightarrow P(A|\overline{B}) = \dfrac{\dfrac{17}{69}\cdot 0.15}{\dfrac{17}{69}
     Lập trình viên muốn tô màu một phần của vùng đất đó sao cho khi đứng trong vùng tô màu này, nhân vật di chuyển đến giếng nước để lấy nước nhanh hơn so với đến bờ sông.
 
     Diện tích vùng tô màu đó là bao nhiêu mét vuông? (Giả sử rằng khi di chuyển, vận tốc của nhân vật không đổi; làm tròn kết quả đến hàng đơn vị).
-
 }
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/Nghệ An 2025 - Đợt 3/NgheAn25-6.png}
+\end{figure}
+Khai thác dữ kiện, dễ thấy ranh giới cần tìm có dạng parabolic và ta có số liệu như hình vẽ.\par
+Xét $\triangle TIM$: $x^2 = 20^2 + (60-x)^2 \Leftrightarrow x = \dfrac{100}{3}$(m)\par
+$\Rightarrow \sin\alpha = \dfrac{20}{100/3} = \dfrac{3}{5} \Rightarrow\alpha=\arcsin(\dfrac{3}{5})$\par
+Xét $\triangle IHN$: $IN = \dfrac{IH}{\cos\alpha} = \dfrac{60 - IN}{\cos\alpha} \Leftrightarrow IN = \dfrac{60}{\cos\alpha + 1}$\par
+$S = S_{BCVT} + 2S_{\triangle ITM} + 2S_1 = 40\cdot 20 + 2\cdot\dfrac{1}{2}\cdot 20\cdot(60-\dfrac{100}{3}) + 2\cdot\dfrac{1}{2}\displaystyle\int_{0}^{\alpha}(\dfrac{60}{\cos\alpha + 1})^2\,dx$\par
+\hspace*{1em}$= \dfrac{17600}{9} \approx 1956(m^2)$
+
 \end{document}
