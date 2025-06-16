@@ -1,0 +1,49 @@
+\documentclass[twoside,final]{hcmut-report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+% \usepackage{vntex}
+\usepackage[protrusion=false]{microtype}
+
+\usepackage{graphicx, caption}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{multirow,multicol}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{pgfplots}
+% Set up the title
+\coursename{MÔN HỌC}
+\reporttype{??}
+\title{Tên đề tài}
+\advisor{& MSc. ??? &}
+\stuname{& Hồng Phi Trường & ID 2313703}
+
+\AtBeginDocument{\counterwithin{lstlisting}{section}}
+\begin{document}
+\coverpage\clearpage
+
+\newpage\tableofcontents
+
+\newpage
+\listoffigures
+\listoftables
+\clearpage
+
+\fancyfoot{} % clear all footer fields
+\fancyfoot[L]{\scriptsize \ttfamily ??????\\Học kì xxx - Lxx - Nhóm xx}
+\fancyfoot[R]{\scriptsize \ttfamily Trang {\thepage}/\pageref{LastPage}}
+
+\setcounter{page}{1}
+
+\end{document}
