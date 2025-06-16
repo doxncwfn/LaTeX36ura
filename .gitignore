@@ -20,9 +20,7 @@
 *.ind
 *.lol
 *.excalidraw.png
-
-# PDF output (uncomment if you don't want to track PDFs)
-# *.pdf
+*.pdf
 
 # System files
 .DS_Store
