@@ -58,7 +58,7 @@
 \setcounter{page}{1}
 \section{Xác suất thống kê}
 \subsection{Lý thuyết}
-\subsection{Định nghĩa}
+\subsubsection{Định nghĩa}
 Cho hai biến cố $A$ và $B$. Xác suất của biến cố $A$ với điều kiện biến cố $B$ đã xảy ra được gọi là xác suất của $A$ với điều kiện $B$, kí hiệu là $P(A | B)$.
 
 Nếu $P(B) > 0$ thì:
@@ -91,7 +91,7 @@ Từ đó ta có công thức xác suất đầy đủ như sau:
 \[
     P(A) = P(B) \cdot P(A | B) + P(\overline{B}) \cdot P(A | \overline{B}).
 \]
-\subsubsection{Công thức Bayes}
+\subsection{Công thức Bayes}
 Từ công thức nhân xác suất:
 \[
     P(B | A) \cdot P(A) = P(B) \cdot P(A | B) = P(A \cap B).
@@ -103,9 +103,53 @@ Với hai biến cố $A, B$ mà $P(A) > 0$, ta có công thức xác suất Bay
 \]
 
 Do \(P(A) = P(B) \cdot P(A | B) + P(\overline{B}) \cdot P(A | \overline{B})\), nên công thức Bayes còn có dạng:
-\[
-    P(B | A) = \frac{P(B) \cdot P(A | B)}{P(B) \cdot P(A | B) + P(\overline{B}) \cdot P(A | \overline{B})}.
-\]
+\begin{center}
+    \result{$P(B | A) = \dfrac{P(B) \cdot P(A | B)}{P(B) \cdot P(A | B) + P(\overline{B}) \cdot P(A | \overline{B})}$}
+\end{center}
+\subsection{Xích Markov}
+Mô hình Markov là một mô hình xác suất gồm một tập hợp hữu hạn các trạng thái và các xác suất chuyển trạng thái, trong đó xác suất chuyển sang trạng thái tiếp theo chỉ phụ thuộc vào trạng thái hiện tại, phụ thuộc vào 2 yếu tố chính:
+\begin{itemize}[itemsep=0pt, topsep=0pt, parsep=0pt,label=-]
+    \item Mô hình đầu vào, biểu thị điều kiện hoặc số lượng ban đầu: $I_{m\times 1}$ (Initial State) với $m$ là số lượng tham số.
+    \item Mô hình chuyển trạng thái, biểu thị mối liên hệ giữa các đại lượng: $M_{m\times m}$ (Modification), trong đó đại lượng $x_{ab}$ biểu thị mối liên hệ giữa đại lượng $b$ từ đại lượng $a$.
+\end{itemize}
+
+Sự chuyển trạng thái giữa 2 chu kỳ liên tiếp nhau được biểu thị: $I_{n} = M\cdot I_{n-1}$\par
+Vậy sau khi trải qua $n$ chu kỳ, xác suất của mô hình là: \[\result{$I_{n} = M^n\cdot I_0$}\]
+\textbf{Ví dụ}
+\exercise{Cuối năm 2036, tiểu vương quốc Ộ-i-i LGBT Skibidi thực hiện khảo sát thống kê thành phần chính trong ngành công nghiệp nặng trọng điểm Scammer, Đố Bạn, Streamer thu được kết quả so với năm trước như sau:
+    \begin{itemize}[itemsep=0pt, topsep=0pt, parsep=0pt,label=-]
+        \item Mỗi đơn vị đầu ra ngành Scammer cần $(0\%, 30\%, 20\%)$.
+        \item Mỗi đơn vị đầu ra ngành Đố Bạn cần $(45\%, 5\%, 5\%)$.
+        \item Mỗi đơn vị đầu ra ngành Streamer cần $(35\%, 10\%, 0\%)$.
+    \end{itemize}
+
+    Trong đó $(A, B, C)$ là số đơn vị đầu vào của ngành $A$, $B$, $C$. Giả sử số liệu trên không đổi qua các năm, tính cơ cấu kinh tế của mỗi ngành vào năm 2063, biết năm 2036 kim ngạch kinh tế của các ngành lần lượt là $100$, $200$, $120$ triệu USD.
+}
+Mô hình ma trận đầu vào và ma trận chuyển đổi: $I_0 = \begin{pmatrix}
+        100 \\
+        200 \\
+        120
+    \end{pmatrix}$ (triệu USD), $M = \begin{pmatrix}
+        0   & 0.45 & 0.35 \\
+        0.3 & 0.05 & 0.1  \\
+        0.2 & 0.05 & 0
+    \end{pmatrix}$
+
+$\Rightarrow I_{27} = M^{27}\cdot I_0 = \begin{pmatrix}
+        0   & 0.45 & 0.35 \\
+        0.3 & 0.05 & 0.1  \\
+        0.2 & 0.05 & 0
+    \end{pmatrix}^{27} \times \begin{pmatrix}
+        100 \\
+        200 \\
+        120
+    \end{pmatrix} = \begin{pmatrix}
+        2.000\cdot 10^{-4} \\
+        1.518\cdot 10^{-4} \\
+        9.380\cdot 10^{-4}
+    \end{pmatrix}$
+
+Vậy Scammer, Đố Bạn, Streamer chiếm lần lượt $2.000\cdot 10^{-6}\%$, $1.518\cdot 10^{-6}\%$, $9.380\cdot 10^{-6}\%$ cơ cấu kinh tế.
 \subsection{Bài tập}
 \exercise{Theo một số liệu thống kê, năm 2004 ở Canada có 65\% nam giới là thừa cân và 53,4\% nữ giới là thừa cân. Nam giới và nữ giới ở Canada đều chiếm 50\% dân số cả nước. Hỏi trong năm 2004, xác suất để một người Canada được chọn ngẫu nhiên là người thừa cân bằng bao nhiêu?}
 
@@ -198,6 +242,34 @@ $\Rightarrow P(A|\overline{B}) = \dfrac{\dfrac{17}{69}\cdot 0.15}{\dfrac{17}{69}
         \includegraphics[width=\textwidth]{images/Nghệ An 2025 - Đợt 3/NgheAn25-1.png}
     \end{figure}
 \end{minipage}
+
+\exercise{
+    \textcolor{orange}{\textit{2425 -- Cụm trường Tuyên Quang - Vĩnh Phúc}}
+
+    Ông Hùng hằng ngày đi làm bằng xe máy hoặc xe buýt. Tỉ lệ trễ giờ nếu ông đi làm bằng xe máy là $5\%$, bằng xe buýt là $10\%$. Xét trong tháng 6, ông Hùng ngày nào cũng đi làm đều đặn và trong ngày đầu tiên của tháng, xác suất ông chọn đi làm bằng xe máy là $60\%$.
+
+    Từ ngày thứ hai trở đi, cách ông Hùng chọn phương tiện đi làm phụ thuộc vào việc ông có bị trễ giờ trong ngày hôm trước hay không:
+    \begin{itemize}[itemsep=0pt, topsep=0pt, parsep=0pt,label=-]
+        \item Nếu ngày hôm trước ông Hùng không bị trễ giờ thì ông ấy tiếp tục sử dụng loại phương tiện mà ông đã đi trong ngày hôm trước.
+        \item Nếu ngày hôm trước ông Hùng bị trễ giờ thì ông sẽ chuyển sang sử dụng loại phương tiện còn lại.
+    \end{itemize}
+
+    Xác suất để ngày cuối cùng của tháng 6 ông Hùng đi làm bằng xe máy là $p$, khi đó giá trị của $10^4\cdot p$ là? (kết quả làm tròn đến hàng đơn vị).
+}
+\begin{wrapfigure}{r}{0.5\textwidth}
+    \centering
+    \includegraphics*[width=1.03\linewidth]{images/XSTK/TQ-VP.png}
+\end{wrapfigure}
+Áp dụng mô hình Markov: $I_{30} = M^{29}\cdot I_1 = \begin{pmatrix}
+        0.95 & 0.9 \\
+        0.05 & 0.1
+    \end{pmatrix}^{29}\times \begin{pmatrix}
+        0.6 \\ 0.4
+    \end{pmatrix} \approx \begin{pmatrix}
+        0.6661 \\0.3339
+    \end{pmatrix}$
+
+$\Rightarrow \result{$10^4\cdot p = 6661$}$
 \newpage\section{Ứng dụng tích phân}
 \exercise{
     \textcolor{red}{\textit{2425 -- Sở GDĐT Nghệ An -- Đợt 3}}
