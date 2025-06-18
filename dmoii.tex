@@ -21,6 +21,7 @@
 \usepackage{makecell}
 \usepackage{subcaption}
 \usepackage{tikz}
+\usepackage{tkz-tab}
 \usepackage{pgfplots}
 \usepackage[most]{tcolorbox}
 \usepackage{wrapfig}
@@ -42,6 +43,8 @@
   before upper={\setlength{\parindent}{2em}}
 }
 \newcommand{\exercise}[1]{\begin{exercisebox}#1\end{exercisebox}}
+\newcommand{\result}[1]{\fcolorbox{red}{white}{#1}}
+\newcommand{\divides}{\mathrel{\vdots}}
 \begin{document}
 
 \coverpage\clearpage
@@ -122,10 +125,23 @@ $\begin{cases}
 Theo công thức xác suất toàn phần:
 \[
     \mathrm{P}(A) = \mathrm{P}(B) \cdot \mathrm{P}(A | B) + \mathrm{P}(\overline{B}) \cdot \mathrm{P}(A | \overline{B})
-    = 0{,}5 \cdot 0{,}65 + 0{,}5 \cdot 0{,}534 = 0{,}592.
+    = 0{,}5 \cdot 0{,}65 + 0{,}5 \cdot 0{,}534 = \result{0{,}592}.
 \]
+\exercise{Một hộp chứa 9 thẻ được đánh số từ 1 tới 9, bạn A lấy ngẫu nhiên 1 thẻ từ hộp, xem rồi bỏ ra ngoài. Nếu thẻ là số chẵn thì A cho vào hộp 2 số 10 và 11. Nếu thẻ là số lẻ thì A cho thêm vào số 12, 13, 14. Bạn B lấy 3 thẻ ngẫu nhiên từ hộp. Gọi X là tích các số trên thẻ B lấy ra, biết X chia hết cho 2, tính xác suất của bạn A lấy ra được số chẵn.
+}
+\begin{wrapfigure}{r}{0.25\textwidth}
+    \centering
+    \includegraphics[width=1.2\linewidth]{images/XSTK/2.png}
+\end{wrapfigure}
+Gọi $C$ là biến cố lấy được số chẵn.\par
+Ta có:
+$\begin{cases}
+        P(C)\cdot P(X\divides 2|C) = \frac{4}{9}\cdot(1-\dfrac{C_6^3}{\displaystyle C_{10}^3}) \\
+        P(\overline{C})\cdot P(X\divides 2|\overline{C}) = \frac{5}{9}\cdot(1-\dfrac{C_5^3}{\displaystyle C_{11}^3})
+    \end{cases}$\par
+$\Rightarrow P(C|X\divides 2) = \dfrac{\frac{4}{9}\cdot(1-\dfrac{C_6^3}{\displaystyle C_{10}^3})}{\frac{4}{9}\cdot(1-\dfrac{C_6^3}{\displaystyle C_{10}^3}) + \frac{5}{9}\cdot(1-\dfrac{C_5^3}{\displaystyle C_{11}^3})} =\dfrac{572}{1351}\approx \result{0.4151}$
 \subsection{Đề thi thử trường sở}
-\exercise{\textcolor{red}{\textit{Đợt 3 -- 2425 -- Nghệ An}}
+\exercise{\textcolor{red}{\textit{2425 -- Sở GDĐT Nghệ An -- Đợt 3}}
 
     \begin{wrapfigure}{r}{0.17\textwidth}
         \centering
@@ -147,9 +163,9 @@ Vì nếu ngồi chéo An thì bạn đó vẫn bị nhiễm bệnh nên xét v�
 \end{itemize}
 
 $\Rightarrow P(A) = \dfrac{4}{24}\cdot\dfrac{3}{23} + \dfrac{12}{24}\cdot\dfrac{5}{23} + \dfrac{8}{24}\cdot\dfrac{8}{23} = \dfrac{17}{69} \Rightarrow P(\overline{A}) = \dfrac{52}{69}$\\
-$\Rightarrow P(A|\overline{B}) = \dfrac{\dfrac{17}{69}\cdot 0.15}{\dfrac{17}{69}\cdot 0.15 + \dfrac{52}{69}\cdot0.95} \approx 0.0491 \approx 0.05$
+$\Rightarrow P(A|\overline{B}) = \dfrac{\dfrac{17}{69}\cdot 0.15}{\dfrac{17}{69}\cdot 0.15 + \dfrac{52}{69}\cdot0.95} \approx 0.0491 \approx$ \result{$0.05$}
 
-\exercise{\textcolor{orange}{\textit{Đợt 3 -- 2425 -- Nghệ An}}
+\exercise{\textcolor{orange}{\textit{2425 -- Sở GDĐT Nghệ An -- Đợt 3}}
 
     Một nghiên cứu dịch tễ học trong một cộng đồng dân số tại một địa phương X đưa ra các số liệu sau:
     \begin{itemize}[itemsep=0pt, topsep=0pt, parsep=0pt,label=-]
@@ -157,7 +173,7 @@ $\Rightarrow P(A|\overline{B}) = \dfrac{\dfrac{17}{69}\cdot 0.15}{\dfrac{17}{69}
         \item Tỷ lệ bị ung thư phổi ở nhóm người hút thuốc lá là 2\%, trong khi ở nhóm người không hút thuốc lá chỉ là 0,1\%.
     \end{itemize}
 
-    Xét một người được chọn ngẫu nhiên từ cộng đồng này. Ký hiệu $A$ là biến cố "Người đó bị ung thư phổi" và $B$ là biến cố "Người đó có hút thuốc lá".
+    Xét một người được chọn ngẫu nhiên từ cộng đồng này. Ký hiệu $A$ là biến cố ''Người đó bị ung thư phổi'' và $B$ là biến cố ''Người đó có hút thuốc lá''.
     \begin{enumerate}[itemsep=0pt, topsep=0pt, parsep=0pt,label=\alph*)]
         \item $P(A|B) = 0,1$
         \item Nếu một người bị ung thư phổi, thì xác suất người đó có hút thuốc lá là 0,8 (làm tròn đến hàng phần mười).
@@ -166,26 +182,25 @@ $\Rightarrow P(A|\overline{B}) = \dfrac{\dfrac{17}{69}\cdot 0.15}{\dfrac{17}{69}
     \end{enumerate}}
 \begin{minipage}{0.55\textwidth}
     a) Từ đề bài: $\begin{cases}
-            P(A|B)=2\%                \\
+            \result{P(A|B)=2\%}       \\
             P(A|\overline{B}) = 0,1\% \\
             P(B) = 0.25
         \end{cases} \Rightarrow$ \textcolor{red}{Sai}\\
 
-    b) $P(A|B) = \dfrac{2\%\cdot 0.25}{2\%\cdot 0.25 + 0.75\cdot 0.1\%} = \dfrac{20}{23} \approx 0.9 \Rightarrow$ \textcolor{red}{Sai}\\
+    b) $P(A|B) = \dfrac{2\%\cdot 0.25}{2\%\cdot 0.25 + 0.75\cdot 0.1\%} = \dfrac{20}{23} \approx \result{0.9} \Rightarrow$ \textcolor{red}{Sai}\\
 
-    c) $P(A) = 2\%\cdot 0.25 + 0.1\%\cdot 0.75 = 5.75\%\Rightarrow$ \textcolor{red}{Sai}\\
+    c) $P(A) = 2\%\cdot 0.25 + 0.1\%\cdot 0.75 = \result{5.75\%} \Rightarrow$ \textcolor{red}{Sai}\\
 
-    d) $\dfrac{P(A|B)}{P(A|\overline{B})} = \dfrac{2\%}{0.1\%} = 20\Rightarrow$  \textcolor{red}{Đúng}
+    d) $\dfrac{P(A|B)}{P(A|\overline{B})} = \dfrac{2\%}{0.1\%} = \result{20}\Rightarrow$  \textcolor{red}{Đúng}
 \end{minipage}
 \begin{minipage}{0.4\textwidth}
     \begin{figure}[H]
-        \centering
         \includegraphics[width=\textwidth]{images/Nghệ An 2025 - Đợt 3/NgheAn25-1.png}
     \end{figure}
 \end{minipage}
 \newpage\section{Ứng dụng tích phân}
 \exercise{
-    \textcolor{red}{\textit{Đợt 3 -- 2425 -- Nghệ An}}
+    \textcolor{red}{\textit{2425 -- Sở GDĐT Nghệ An -- Đợt 3}}
 
     \begin{wrapfigure}{r}{0.35\textwidth}
         \centering
@@ -208,6 +223,6 @@ Xét $\triangle TIM$: $x^2 = 20^2 + (60-x)^2 \Leftrightarrow x = \dfrac{100}{3}$
 $\Rightarrow \sin\alpha = \dfrac{20}{100/3} = \dfrac{3}{5} \Rightarrow\alpha=\arcsin(\dfrac{3}{5})$\par
 Xét $\triangle IHN$: $IN = \dfrac{IH}{\cos\alpha} = \dfrac{60 - IN}{\cos\alpha} \Leftrightarrow IN = \dfrac{60}{\cos\alpha + 1}$\par
 $S = S_{BCVT} + 2S_{\triangle ITM} + 2S_1 = 40\cdot 20 + 2\cdot\dfrac{1}{2}\cdot 20\cdot(60-\dfrac{100}{3}) + 2\cdot\dfrac{1}{2}\displaystyle\int_{0}^{\alpha}(\dfrac{60}{\cos\alpha + 1})^2\,dx$\par
-\hspace*{1em}$= \dfrac{17600}{9} \approx 1956(m^2)$
+\hspace*{1em}$= \dfrac{17600}{9} \approx$ \result{$1956(m^2)$}
 
 \end{document}
