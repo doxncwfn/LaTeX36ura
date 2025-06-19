@@ -3,11 +3,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T5]{fontenc}
 \usepackage[vietnamese]{babel}
-% \usepackage{vntex}
 \usepackage[protrusion=false]{microtype}
 
 \usepackage{graphicx, caption}
-\usepackage{amsmath}
+\usepackage{amsmath, extpfeil}
 \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{multirow,multicol}
@@ -58,7 +57,7 @@
 \setcounter{page}{1}
 \section{Xác suất thống kê}
 \subsection{Lý thuyết}
-\subsubsection{Định nghĩa}
+\paragraph*{Định nghĩa}
 Cho hai biến cố $A$ và $B$. Xác suất của biến cố $A$ với điều kiện biến cố $B$ đã xảy ra được gọi là xác suất của $A$ với điều kiện $B$, kí hiệu là $P(A | B)$.
 
 Nếu $P(B) > 0$ thì:
@@ -72,10 +71,10 @@ Nếu $P(B) > 0$ thì:
           \[
               \mathrm{P}(A \cap B) = \mathrm{P}(A) \cdot \mathrm{P}(B | A) = \mathrm{P}(B) \cdot \mathrm{P}(A | B).
           \]
-          Công thức trên được gọi là \textbf{công thức nhân xác suất}.
+          Công thức trên được gọi là công thức nhân xác suất.
     \item Người ta cũng tính $P(A | B) = \dfrac{n(A \cap B)}{n(B)}$.
 \end{itemize}
-\subsubsection{Công thức xác suất đầy đủ}
+\paragraph*{Công thức xác suất đầy đủ}
 Cho 2 biến cố $A$, $B$ với $0 < P(B) < 1$, ta có:
 \[
     P(A) = P(A \cap B) + P(A \cap \overline{B}).
@@ -224,24 +223,25 @@ $\Rightarrow P(A|\overline{B}) = \dfrac{\dfrac{17}{69}\cdot 0.15}{\dfrac{17}{69}
         \item Tỷ lệ người bị ung thư phổi ở địa phương X là 1,5\%
         \item Dựa trên các số liệu này, tỷ lệ người bị ung thư phổi ở nhóm người có hút thuốc lá cao gấp 20 lần so với ở nhóm người không hút thuốc.
     \end{enumerate}}
-\begin{minipage}{0.55\textwidth}
+\begin{minipage}{0.35\textwidth}
+    \begin{figure}[H]
+        \includegraphics[width=\textwidth]{images/Nghệ An 2025 - Đợt 3/NgheAn25-1.png}
+    \end{figure}
+\end{minipage}
+\begin{minipage}{0.65\textwidth}
     a) Từ đề bài: $\begin{cases}
             \result{P(A|B)=2\%}       \\
             P(A|\overline{B}) = 0,1\% \\
             P(B) = 0.25
         \end{cases} \Rightarrow$ \textcolor{red}{Sai}\\
 
-    b) $P(A|B) = \dfrac{2\%\cdot 0.25}{2\%\cdot 0.25 + 0.75\cdot 0.1\%} = \dfrac{20}{23} \approx \result{0.9} \Rightarrow$ \textcolor{red}{Sai}\\
+    b) $P(A|B) = \dfrac{2\%\cdot 0.25}{2\%\cdot 0.25 + 0.75\cdot 0.1\%} \approx \result{0.9} \Rightarrow$ \textcolor{red}{Sai}\\
 
     c) $P(A) = 2\%\cdot 0.25 + 0.1\%\cdot 0.75 = \result{5.75\%} \Rightarrow$ \textcolor{red}{Sai}\\
 
     d) $\dfrac{P(A|B)}{P(A|\overline{B})} = \dfrac{2\%}{0.1\%} = \result{20}\Rightarrow$  \textcolor{red}{Đúng}
 \end{minipage}
-\begin{minipage}{0.4\textwidth}
-    \begin{figure}[H]
-        \includegraphics[width=\textwidth]{images/Nghệ An 2025 - Đợt 3/NgheAn25-1.png}
-    \end{figure}
-\end{minipage}
+
 
 \exercise{
     \textcolor{orange}{\textit{2425 -- Cụm trường Tuyên Quang - Vĩnh Phúc}}
@@ -256,20 +256,18 @@ $\Rightarrow P(A|\overline{B}) = \dfrac{\dfrac{17}{69}\cdot 0.15}{\dfrac{17}{69}
 
     Xác suất để ngày cuối cùng của tháng 6 ông Hùng đi làm bằng xe máy là $p$, khi đó giá trị của $10^4\cdot p$ là? (kết quả làm tròn đến hàng đơn vị).
 }
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{figure}[H]
     \centering
-    \includegraphics*[width=1.03\linewidth]{images/XSTK/TQ-VP.png}
-\end{wrapfigure}
+    \includegraphics*[width=0.5\textwidth]{images/XSTK/TQ-VP.png}
+\end{figure}
 Áp dụng mô hình Markov: $I_{30} = M^{29}\cdot I_1 = \begin{pmatrix}
         0.95 & 0.9 \\
         0.05 & 0.1
-    \end{pmatrix}^{29}\times \begin{pmatrix}
+    \end{pmatrix}^{29} \begin{pmatrix}
         0.6 \\ 0.4
     \end{pmatrix} \approx \begin{pmatrix}
         0.6661 \\0.3339
-    \end{pmatrix}$
-
-$\Rightarrow \result{$10^4\cdot p = 6661$}$
+    \end{pmatrix} \Rightarrow \result{$10^4\cdot p = 6661$}$
 \newpage\section{Ứng dụng tích phân}
 \exercise{
     \textcolor{red}{\textit{2425 -- Sở GDĐT Nghệ An -- Đợt 3}}
@@ -297,4 +295,63 @@ Xét $\triangle IHN$: $IN = \dfrac{IH}{\cos\alpha} = \dfrac{60 - IN}{\cos\alpha}
 $S = S_{BCVT} + 2S_{\triangle ITM} + 2S_1 = 40\cdot 20 + 2\cdot\dfrac{1}{2}\cdot 20\cdot(60-\dfrac{100}{3}) + 2\cdot\dfrac{1}{2}\displaystyle\int_{0}^{\alpha}(\dfrac{60}{\cos\alpha + 1})^2\,dx$\par
 \hspace*{1em}$= \dfrac{17600}{9} \approx$ \result{$1956(m^2)$}
 
+\exercise{
+    \textcolor{blue}{\textit{2425 -- Cụm trường Tuyên Quang - Vĩnh Phúc}}
+
+    \begin{wrapfigure}{r}{0.35\textwidth}
+        \centering
+        \includegraphics*[width=1.03\linewidth]{images/XSTK/TQ-VP-2.png}
+    \end{wrapfigure}
+
+    Bác Bình muốn nhờ thợ trang trí một bức tường hình chữ nhật $ADEF$ với kích thước $EF = 6\,\text{m}$, $DE = 3\,\text{m}$ sao cho cân xứng hai nửa. Phần gạch chéo là hình giới hạn bởi đường gấp khúc $AFED$ và nửa đường tròn đường kính $AD$, được thuê sơn với đơn giá 250.000đ/m$^2$. Phần màu trắng giới hạn bởi nửa đường tròn đường kính $AD$ và một đường parabol (có đỉnh $H$ cách đường thẳng $AB$ một khoảng bằng $2\,\text{m}$ và đi qua hai điểm $B, C$ nằm trên cạnh $AD$ thỏa mãn $AB = 1{,}5\,\text{m}$, $CD = 1{,}5\,\text{m}$) được thuê trang trí bằng bức phù điêu đắp bằng xi măng với đơn giá 1.950.000đ/m$^2$ (tham khảo hình vẽ).
+
+    Hỏi Bác Bình phải trả bao nhiêu triệu đồng để trang trí bức tường như vậy? (Kết quả làm tròn đến hàng phần mười của triệu đồng)
+}
+\textit{Cách 1}: Dễ thấy parabola có phương trình $y = -\dfrac{8}{9}x^2 + 2 \Rightarrow S_{(P)} = \displaystyle \int_{-1.5}^{1.5}(-\dfrac{8}{9}x^2 + 2)dx = 4$ (m$^2$)\par
+\textit{Cách 2}: $S_{(P)} = \dfrac{2}{3}dh = \dfrac{2}{3}\cdot 3\cdot 2 = 4$ (m$^2$)\par
+$S_1 + S_2 = S_{ADEF} - \dfrac{1}{2}S_{(O; OD)} = 3\cdot 6 - \dfrac{1}{2}\pi\cdot 3^2 = 18 - \dfrac{9}{2}\pi$ (m$^2$)\par
+$\Rightarrow T = 0.25\cdot(18 - \dfrac{9}{2}\pi) + 1.95\cdot (\dfrac{1}{2}\pi\cdot 3^2 - 4) = \dfrac{3(51\pi-22)}{20} \approx \result{20.7}$ (triệu đồng)
+
+\exercise{
+    \textcolor{orange}{\textit{2425 -- Tư duy mở 42}}
+
+    \begin{wrapfigure}{r}{0.2\textwidth}
+        \centering
+        \includegraphics*[width=1.05\linewidth]{images/Ứng dụng tích phân/TDM42.png}
+    \end{wrapfigure}
+    Trên mặt phẳng cho hình vuông $ABCD$ có cạnh bằng $60cm$ và một đường parabol $(P)$ như hình vẽ. Gọi $M$ là điểm nằm trên cạnh $BC$ sao cho $BM > CM$ và di chuyển đến $B$ với tốc độ không đổi $2cm/s$. Hãy xác đinh tốc độ thay đổi của diện tích $S$ giới hạn bởi đoạn $AM$ và $(P)$ theo đơn vị $dm^2/s$ ở thời điểm $M$ là trung điểm của cạnh $BC$. \textit{(làm tròn kết quả đến hàng phần mười)}}
+
+Ta có:
+$\begin{cases}
+        (P):y=\dfrac{x^2}{15} \\
+        M(30; 60 - 2t) \Rightarrow (d_{AM}):y=(-\dfrac{t}{30}+1)x + (30-t)
+    \end{cases}$\par
+$\Rightarrow \dfrac{x^2}{15} = (-\dfrac{t}{30}+1)x + (30-t) \Leftrightarrow 2x^2 + (t - 30)x + 30t - 30^2 = 0 \xRightarrow{\text{Viète}}\begin{cases}
+        x_1 + x_2 & =\dfrac{30-t}{2}            \\
+        x_1x_2    & =\dfrac{30t-30^2}{2}        \\
+        x_1 - x_2 & = -\dfrac{\sqrt{\Delta}}{a}
+    \end{cases}$\par
+$\Rightarrow S(t) = \displaystyle \int_{x_1}^{x_2}\dfrac{x^2}{15}dx = \left. \frac{x^3}{45} \right|_{x_1}^{x_2} = -\dfrac{1}{45}(x_1^3 - x_2^3) = -\dfrac{1}{45}(x_1-x_2)(S^2 - P) \Rightarrow S'(15) \overset{\text{Casio}}{\approx} \result{$-0.2 (dm^2)$}$
+\section{Toán rời rạc}
+\exercise{
+    \textcolor{red}{\textit{2425 -- Nguyễn Khuyến - Lê Thánh Tông}}
+
+    Có 3 phương tiện chuyển động cùng hướng trên một đại lộ theo 3 đường thẳng song song được biểu diễn trên một mặt phẳng:
+    \begin{itemize}[itemsep=0pt, topsep=0pt, parsep=0pt,label=-]
+        \item Một ô tô con (xem như điểm $A$) chuyển động trên đường thẳng $d_1$ với tốc độ không đổi $20m/s$.
+        \item Một xe container (xem như đoạn thẳng $EF$) dài $20$m ($EF=20$m) chuyển động với tốc độ không đổi $16m/s$ trên đường thẳng $d_2$ song song và cách $d_1$ một khoảng $10$m.
+        \item Một xe cảnh sát (xem như điểm $P$) chuyển động với tốc độ không đổi $16m/s$ trên đường thẳng $d_3$ song song và cách $d_2$ một khoảng $10$m.
+    \end{itemize}
+
+    Phát hiện ô tô con có dấu hiệu vi phạm an toàn giao thông, xe cảnh sát tăng tốc với tốc độ $v(t) = 16 + \dfrac{t}{2} (m/s)$ để đuổi theo ô tô con, với $t$ (giây) là khoảng thời gian tính từ lúc bắt đầu tăng tốc. Tại thời điểm tăng tốc, xe cảnh sát cách ô tô con $50$m (dọc theo chiều đại lộ) và cách đuôi xe container (điểm $F$) $150$m (dọc theo chiều đại lộ). \textit{(tham khảo hình vẽ)}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics*[width=0.55\textwidth]{images/Toán rời rạc/NK.png}
+    \end{figure}
+
+    Trong thời gian xe cảnh sát tăng tốc, ô tô con và xe container vẫn duy trì tốc độ như trên đồng thời các xe không thay đổi quỹ đạo chuyển động. Sau khi tăng tốc được $28$ giây thì xe cảnh sát bắt đầu giảm tốc để xử lý tình huống.
+
+    Trong khoảng thời gian xe cảnh sát tăng tốc, xe container che khuất tầm nhìn của xe cảnh sát đối với xe ô tô con (nghĩa là hai đoạn thẳng $AP$ và $EF$ có điểm chung) trong khoảng thời gian bao lâu? \textit{(làm tròn kết quả đến hàng phần chục)}
+}
 \end{document}
