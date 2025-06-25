@@ -44,11 +44,11 @@
 \newcommand{\exercise}[1]{\begin{exercisebox}#1\end{exercisebox}}
 \newcommand{\result}[1]{\fcolorbox{red}{white}{#1}}
 \newcommand{\divides}{\mathrel{\vdots}}
+\renewcommand{\cite}[1]{``#1''}
 \begin{document}
 
-\coverpage\clearpage
-\tableofcontents
-\clearpage
+% \coverpage\clearpage
+\tableofcontents\clearpage
 
 \fancyfoot{}
 \fancyfoot[L]{\scriptsize \ttfamily Toán 12 - Ltro x doxncwfn - 2526}
@@ -112,10 +112,10 @@ Mô hình Markov là một mô hình xác suất gồm một tập hợp hữu h
     \item Mô hình chuyển trạng thái, biểu thị mối liên hệ giữa các đại lượng: $M_{m\times m}$ (Modification), trong đó đại lượng $x_{ab}$ biểu thị mối liên hệ giữa đại lượng $b$ từ đại lượng $a$.
 \end{itemize}
 
-Sự chuyển trạng thái giữa 2 chu kỳ liên tiếp nhau được biểu thị: $I_{n} = M\cdot I_{n-1}$\par
-Vậy sau khi trải qua $n$ chu kỳ, xác suất của mô hình là: \[\result{$I_{n} = M^n\cdot I_0$}\]
+Sự chuyển trạng thái giữa 2 lần chuyển đổi liên tiếp nhau được biểu thị: $I_{n} = M\cdot I_{n-1}$\par
+Vậy sau khi trải qua $n$ lần chuyển đổi, xác suất của mô hình là: \[\result{$I_{n} = M^n\cdot I_0$}\]
 \textbf{Ví dụ}
-\exercise{Cuối năm 2036, tiểu vương quốc Ộ-i-i LGBT Skibidi thực hiện khảo sát thống kê thành phần chính trong ngành công nghiệp nặng trọng điểm Scammer, Đố Bạn, Streamer thu được kết quả so với năm trước như sau:
+\exercise{Cuối năm 2036, tiểu vương quốc Mộ Bikini LGBT Skibidi thực hiện khảo sát thống kê thành phần chính trong ngành công nghiệp nặng trọng điểm Scammer, Đố Bạn, Streamer thu được kết quả so với năm trước như sau:
     \begin{itemize}[itemsep=0pt, topsep=0pt, parsep=0pt,label=-]
         \item Mỗi đơn vị đầu ra ngành Scammer cần $(0\%, 30\%, 20\%)$.
         \item Mỗi đơn vị đầu ra ngành Đố Bạn cần $(45\%, 5\%, 5\%)$.
@@ -162,13 +162,13 @@ Từ giả thiết:
 $\begin{cases}
         \mathrm{P}(B) = \mathrm{P}(\overline{B}) = 50\% = 0{,}5 \\
         \mathrm{P}(A | B) = 65\% = 0{,}65                       \\
-        \mathrm{P}(A | \overline{B}) = 53{,}4\% = 0{,}534.
+        \mathrm{P}(A | \overline{B}) = 53.4\% = 0{,}534.
     \end{cases}$
 
 Theo công thức xác suất toàn phần:
 \[
     \mathrm{P}(A) = \mathrm{P}(B) \cdot \mathrm{P}(A | B) + \mathrm{P}(\overline{B}) \cdot \mathrm{P}(A | \overline{B})
-    = 0{,}5 \cdot 0{,}65 + 0{,}5 \cdot 0{,}534 = \result{0{,}592}.
+    = 0.5 \cdot 0.65 + 0.5 \cdot 0.534 = \result{0.592}.
 \]
 \exercise{Một hộp chứa 9 thẻ được đánh số từ 1 tới 9, bạn A lấy ngẫu nhiên 1 thẻ từ hộp, xem rồi bỏ ra ngoài. Nếu thẻ là số chẵn thì A cho vào hộp 2 số 10 và 11. Nếu thẻ là số lẻ thì A cho thêm vào số 12, 13, 14. Bạn B lấy 3 thẻ ngẫu nhiên từ hộp. Gọi X là tích các số trên thẻ B lấy ra, biết X chia hết cho 2, tính xác suất của bạn A lấy ra được số chẵn.
 }
@@ -179,10 +179,10 @@ Theo công thức xác suất toàn phần:
 Gọi $C$ là biến cố lấy được số chẵn.\par
 Ta có:
 $\begin{cases}
-        P(C)\cdot P(X\divides 2|C) = \frac{4}{9}\cdot(1-\dfrac{C_6^3}{\displaystyle C_{10}^3}) \\
-        P(\overline{C})\cdot P(X\divides 2|\overline{C}) = \frac{5}{9}\cdot(1-\dfrac{C_5^3}{\displaystyle C_{11}^3})
+        P(C)\cdot P(X\divides 2|C) = \dfrac{4}{9}\cdot(1-\dfrac{C_6^3}{\displaystyle C_{10}^3}) \\
+        P(\overline{C})\cdot P(X\divides 2|\overline{C}) = \dfrac{5}{9}\cdot(1-\dfrac{C_5^3}{\displaystyle C_{11}^3})
     \end{cases}$\par
-$\Rightarrow P(C|X\divides 2) = \dfrac{\frac{4}{9}\cdot(1-\dfrac{C_6^3}{\displaystyle C_{10}^3})}{\frac{4}{9}\cdot(1-\dfrac{C_6^3}{\displaystyle C_{10}^3}) + \frac{5}{9}\cdot(1-\dfrac{C_5^3}{\displaystyle C_{11}^3})} =\dfrac{572}{1351}\approx \result{0.4151}$
+$\Rightarrow P(C|X\divides 2) = \dfrac{\dfrac{4}{9}\cdot(1-\dfrac{C_6^3}{\displaystyle C_{10}^3})}{\dfrac{4}{9}\cdot(1-\dfrac{C_6^3}{\displaystyle C_{10}^3}) + \dfrac{5}{9}\cdot(1-\dfrac{C_5^3}{\displaystyle C_{11}^3})} =\dfrac{572}{1351}\approx \result{0.4151}$
 \subsection{Đề thi thử trường sở}
 \exercise{\textcolor{red}{\textit{2425 -- Sở GDĐT Nghệ An -- Đợt 3}}
 
@@ -192,12 +192,13 @@ $\Rightarrow P(C|X\divides 2) = \dfrac{\frac{4}{9}\cdot(1-\dfrac{C_6^3}{\display
     \end{wrapfigure}
     Cúm A (Influenza A) là bệnh nhiễm trùng đường hô hấp cấp tính do các virus cúm mùa gây nên. Virus cúm A có thể lây truyền trực tiếp trong không khí thông qua đường hô hấp. Giả sử Virut cúm A có khả năng lấy nhiễm đối với người ngồi trong vòng bán kính $1,9m$ là $85\%$ và đối với người ngồi cách hơn $1,9m$ là $5\%$. An là một học sinh bị nhiễm cúm A nhưng bản thân không hay biết. An đi dự thi cuối kỳ. Phòng thi của An có $24$ bạn được xếp vào $24$ chỗ ngồi của một phòng thi có $4$ dãy, mỗi dãy $6$ chỗ ngồi như hình vẽ. Khoảng cách giữa hai người theo hàng ngang là $1,6m$, theo hàng dọc là 1m (hình vẽ). Do không biết trước An bị cúm A nên các thí sinh được xếp ngẫu nhiên vào phòng thi. Một bạn cùng phòng của An sau khi dự thi đi kiểm tra thấy không bị nhiễm cúm. Tính xác suất để thí sinh đó ngồi gần An trong vòng $1,9m$. \textit{(Làm tròn kết quả đến hàng phần trăm)}.
 }
-\begin{wrapfigure}{l}{0.25\textwidth}
+\begin{wrapfigure}{r}{0.25\textwidth}
     \centering
     \includegraphics[width=0.8\linewidth]{images/Nghệ An 2025 - Đợt 3/NgheAn25-3.png}
     \includegraphics[width=1.2\linewidth]{images/Nghệ An 2025 - Đợt 3/NgheAn25-4.png}
 \end{wrapfigure}
-Gọi $A$ là biến cố ngồi gần An, $B$ là biến cố bị nhiễm bệnh.\\
+
+Gọi $A$ là biến cố ngồi gần An, $B$ là biến cố bị nhiễm bệnh.\par
 Vì nếu ngồi chéo An thì bạn đó vẫn bị nhiễm bệnh nên xét vị trí An được xếp:
 \begin{itemize}[itemsep=0pt, topsep=0pt, parsep=0pt,label=-]
     \item Nếu An ngồi ở 1 trong 4 góc phòng, chỉ có $3$ vị trí trong bán kính lây bệnh.
@@ -242,7 +243,6 @@ $\Rightarrow P(A|\overline{B}) = \dfrac{\dfrac{17}{69}\cdot 0.15}{\dfrac{17}{69}
     d) $\dfrac{P(A|B)}{P(A|\overline{B})} = \dfrac{2\%}{0.1\%} = \result{20}\Rightarrow$  \textcolor{red}{Đúng}
 \end{minipage}
 
-
 \exercise{
     \textcolor{orange}{\textit{2425 -- Cụm trường Tuyên Quang - Vĩnh Phúc}}
 
@@ -253,12 +253,12 @@ $\Rightarrow P(A|\overline{B}) = \dfrac{\dfrac{17}{69}\cdot 0.15}{\dfrac{17}{69}
         \item Nếu ngày hôm trước ông Hùng không bị trễ giờ thì ông ấy tiếp tục sử dụng loại phương tiện mà ông đã đi trong ngày hôm trước.
         \item Nếu ngày hôm trước ông Hùng bị trễ giờ thì ông sẽ chuyển sang sử dụng loại phương tiện còn lại.
     \end{itemize}
-
-    Xác suất để ngày cuối cùng của tháng 6 ông Hùng đi làm bằng xe máy là $p$, khi đó giá trị của $10^4\cdot p$ là? (kết quả làm tròn đến hàng đơn vị).
+    ,
+    Xác suất để ngày cuối cùng của tháng 6 ông Hùng đi làm bằng xe máy là $p$, khi đó giá trị của $10^4\cdot p$ là? \textit{(kết quả làm tròn đến hàng đơn vị)}
 }
 \begin{figure}[H]
     \centering
-    \includegraphics*[width=0.5\textwidth]{images/XSTK/TQ-VP.png}
+    \includegraphics*[width=0.35\textwidth]{images/XSTK/TQ-VP.png}
 \end{figure}
 Áp dụng mô hình Markov: $I_{30} = M^{29}\cdot I_1 = \begin{pmatrix}
         0.95 & 0.9 \\
@@ -268,6 +268,36 @@ $\Rightarrow P(A|\overline{B}) = \dfrac{\dfrac{17}{69}\cdot 0.15}{\dfrac{17}{69}
     \end{pmatrix} \approx \begin{pmatrix}
         0.6661 \\0.3339
     \end{pmatrix} \Rightarrow \result{$10^4\cdot p = 6661$}$
+
+\exercise{
+    \textcolor{orange}{\textit{2425 -- THPT Tĩnh Gia 1 - Thanh Hoá}}
+
+    Có hai chiếc hộp, hộp $I$ có $6$ quả bóng màu đỏ và một số quả bóng màu xanh, hộp $II$ có $7$ quả bóng màu đỏ và $3$ quả bóng màu xanh, các quả bóng có cùng kích thước và khối lượng. Lấy ngẫu nhiên một quả bóng từ hộp $I$ bỏ vào hộp $II$. Sau đó, lấy ra ngẫu nhiên hai quả bóng từ hộp $II$. Xác suất lấy được ít nhất một quả bóng đỏ từ hộp $II$ bằng $\dfrac{32}{35}$. Tính xác suất để quả bóng được lấy ra từ hộp $I$ là quả bóng đỏ, biết rằng hai quả bóng lấy ra từ hộp $II$ có ít nhất một quả bóng đỏ. \textit{(làm tròn kết quả đến hàng phần trăm)}}
+
+Gọi $n$ là số quả bóng xanh ở hộp I. ($n\in\mathbb{N}^*$)\par
+Gọi $A$ là biến cố ''quả bóng lấy được ở hộp I là bóng đỏ''
+$\Rightarrow \begin{cases}
+        P(A) = \dfrac{6}{n+6} \\
+        P(\overline{A}) = \dfrac{n}{n+6}
+    \end{cases}$\par
+Gọi $B$ là biến cố ''hai quả bóng lấy ra từ hộp II là có ít nhất một quả bóng đỏ''\par
+$\Rightarrow P(\overline{B}|A) = \dfrac{\displaystyle C^2_3}{\displaystyle C^2_{11}} = \dfrac{3}{55}$, $P(\overline{B}|\overline{A}) = \dfrac{\displaystyle C^2_4}{\displaystyle C^2_{11}} = \dfrac{6}{55}$\par
+$\Rightarrow P(B) = P(A)\cdot P(B|A) + P(\overline{A})\cdot P(B|\overline{A}) = \dfrac{312 + 49n}{55(n+6)} = \dfrac{32}{35} \Leftrightarrow n = 8$\par
+$\Rightarrow P(A|B) = \dfrac{P(A)\cdot P(B|A)}{P(B)} = \dfrac{P(A)\cdot (1 - P(\overline{B}|A))}{P(B)} = \dfrac{\dfrac{6}{14}\cdot(1-\dfrac{3}{55})}{\dfrac{32}{35}} = \dfrac{39}{88} \approx \result{0.44}$\par
+\exercise{
+    \textcolor{red}{\textit{2425 -- THPT Quỳ Hợp 2 Nghệ An -- Lần 5}}
+
+    Một cơ sở sản xuất sữa giả mua các thùng sữa thật giống nhau ($48$ hộp/thùng), rồi thay thế một số hộp sữa thật thành các hộp sữa giả nhằm thu lợi bất chính. Trong quá trình sản xuất, cơ sở phân ra làm $2$ loại: loại $I$ để lẫn mỗi thùng $5$ hộp sữa giả và loại $II$ để lẫn mỗi thùng $3$ hộp sữa giả. Biết rằng số thùng sữa loại $I$ bằng $1.5$ lần số thùng sữa loại $II$. Chọn ngẫu nhiên 1 thùng sữa từ cơ sở sản xuất và từ thùng đó lấy ra ngẫu nhiên $10$ hộp. Tính xác suất để trong $10$ hộp lấy ra có đúng $2$ hộp sữa là giả \textit{(làm tròn kết quả đến hàng phần trăm)}.}
+% Gọi $x$ là số thùng sữa loại $II$ ($x\in\mathbb{N}^*$) $\Rightarrow 1.5x$ là số thúng sữa loại $I$.\par
+Gọi $A$ là biến cố ``thùng sữa được chọn thuộc loại $I$'' $\Rightarrow \begin{cases}
+        P(A) = \dfrac{1.5x}{1.5x + x} \\
+        P(\overline{A}) = 1 - P(A)
+    \end{cases}$.\par
+Gọi $B$ là biến cố ``10 hộp sữa được chọn có 2 hộp sữa giả'' $\Rightarrow \begin{cases}
+        P(B|A) = \dfrac{\displaystyle C^2_{5}\cdot C^{8}_{43}}{\displaystyle C^{10}_{48}} \\
+        P(B|\overline{A}) = \dfrac{\displaystyle C^2_{3}\cdot C^{8}_{45}}{\displaystyle C^{10}_{48}}
+    \end{cases}$.\par
+$\Rightarrow P(B) = P(A)\cdot P(B|A) + P(\overline{A})\cdot P(B|\overline{A}) = \dfrac{2052}{11891} \approx \result{$0.17$}$
 \newpage\section{Ứng dụng tích phân}
 \exercise{
     \textcolor{red}{\textit{2425 -- Sở GDĐT Nghệ An -- Đợt 3}}
@@ -303,7 +333,7 @@ $S = S_{BCVT} + 2S_{\triangle ITM} + 2S_1 = 40\cdot 20 + 2\cdot\dfrac{1}{2}\cdot
         \includegraphics*[width=1.03\linewidth]{images/XSTK/TQ-VP-2.png}
     \end{wrapfigure}
 
-    Bác Bình muốn nhờ thợ trang trí một bức tường hình chữ nhật $ADEF$ với kích thước $EF = 6\,\text{m}$, $DE = 3\,\text{m}$ sao cho cân xứng hai nửa. Phần gạch chéo là hình giới hạn bởi đường gấp khúc $AFED$ và nửa đường tròn đường kính $AD$, được thuê sơn với đơn giá 250.000đ/m$^2$. Phần màu trắng giới hạn bởi nửa đường tròn đường kính $AD$ và một đường parabol (có đỉnh $H$ cách đường thẳng $AB$ một khoảng bằng $2\,\text{m}$ và đi qua hai điểm $B, C$ nằm trên cạnh $AD$ thỏa mãn $AB = 1{,}5\,\text{m}$, $CD = 1{,}5\,\text{m}$) được thuê trang trí bằng bức phù điêu đắp bằng xi măng với đơn giá 1.950.000đ/m$^2$ (tham khảo hình vẽ).
+    Bác Bình muốn nhờ thợ trang trí một bức tường hình chữ nhật $ADEF$ với kích thước $EF = 6\,\text{m}$, $DE = 3\,\text{m}$ sao cho cân xứng hai nửa. Phần gạch chéo là hình giới hạn bởi đường gấp khúc $AFED$ và nửa đường tròn đường kính $AD$, được thuê sơn với đơn giá 250.000đ/m$^2$. Phần màu trắng giới hạn bởi nửa đường tròn đường kính $AD$ và một đường parabol (có đỉnh $H$ cách đường thẳng $AB$ một khoảng bằng $2\,\text{m}$ và đi qua hai điểm $B, C$ nằm trên cạnh $AD$ thỏa mãn $AB = 1.5\,\text{m}$, $CD = 1.5\,\text{m}$) được thuê trang trí bằng bức phù điêu đắp bằng xi măng với đơn giá 1.950.000đ/m$^2$ (tham khảo hình vẽ).
 
     Hỏi Bác Bình phải trả bao nhiêu triệu đồng để trang trí bức tường như vậy? (Kết quả làm tròn đến hàng phần mười của triệu đồng)
 }
@@ -323,16 +353,75 @@ $\Rightarrow T = 0.25\cdot(18 - \dfrac{9}{2}\pi) + 1.95\cdot (\dfrac{1}{2}\pi\cd
 
 Ta có:
 $\begin{cases}
-        (P):y=\dfrac{x^2}{15} \\
+        C(30; 60), D(-30;60)\in (P) \Rightarrow (P):y=\dfrac{x^2}{15} \\
         M(30; 60 - 2t) \Rightarrow (d_{AM}):y=(-\dfrac{t}{30}+1)x + (30-t)
     \end{cases}$\par
 $\Rightarrow \dfrac{x^2}{15} = (-\dfrac{t}{30}+1)x + (30-t) \Leftrightarrow 2x^2 + (t - 30)x + 30t - 30^2 = 0 \xRightarrow{\text{Viète}}\begin{cases}
-        x_1 + x_2 & =\dfrac{30-t}{2}            \\
-        x_1x_2    & =\dfrac{30t-30^2}{2}        \\
-        x_1 - x_2 & = -\dfrac{\sqrt{\Delta}}{a}
+        x_1 + x_2 =\dfrac{30-t}{2}  \\
+        x_1x_2 =\dfrac{30t-30^2}{2} \\
+        x_2 - x_1 =\dfrac{\sqrt{\Delta}}{a}
     \end{cases}$\par
-$\Rightarrow S(t) = \displaystyle \int_{x_1}^{x_2}\dfrac{x^2}{15}dx = \left. \frac{x^3}{45} \right|_{x_1}^{x_2} = -\dfrac{1}{45}(x_1^3 - x_2^3) = -\dfrac{1}{45}(x_1-x_2)(S^2 - P) \Rightarrow S'(15) \overset{\text{Casio}}{\approx} \result{$-0.2 (dm^2)$}$
-\section{Toán rời rạc}
+$\Rightarrow S(t) = \displaystyle \int_{x_1}^{x_2}\dfrac{x^2}{15}dx = \left. \frac{x^3}{45} \right|_{x_1}^{x_2} = \dfrac{1}{45}(x_2^3 - x_1^3) = \dfrac{1}{45}(x_2-x_1)(S^2 - P) \Rightarrow S'(15) \overset{\text{Casio}}{\approx} \result{$-0.2\,(dm^2/s)$}$
+\exercise{
+    \textcolor{blue}{\textit{2425 -- THPT Quỳ Hợp 2 Nghệ An -- Lần 5}}
+
+    Một người thợ gốm sứ muốn tạo ra một sản phẩm là bình sứ tráng men vẽ hoa văn bằng vàng 24K mang ý nghĩa phong thủy \cite{Thuận buồm xuôi gió} như hình vẽ mô tả. Để tạo ra sản phẩm bằng phương pháp bàn xoay thủ công, người đó đã thiết kế mẫu sản phẩm trên bản vẽ như sau: cắt từ tấm bìa hình chữ nhật $ABCD$ theo đường cong $EHGF$ là đường bậc 3. Đường cong này tiếp xúc cạnh $CD$ tại điểm $H$, $G$ là điểm trên đường cong gần đường thẳng $AB$ nhất, khoảng cách từ $G$ đến đường thẳng $CB$ là $5\text{cm}, AB = 40\,\text{cm}, EA = 10\,\text{cm}, DH = 10\,\text{cm}, BC = 20\,\text{cm}$.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics*[width=0.6\textwidth]{images/Ứng dụng tích phân/QH2.png}
+    \end{figure}
+
+    Tiến hành quay hình khép kín $AEHGFB$ quanh trục $AB$ để tạo ra sản phẩm. Thể tích bình phong thủy là bao nhiêu decimet khối? \textit{(kết quả làm tròn đến hàng đơn vị)}}
+
+Đặt phương trình cần tìm là $f(x)=ax^3+bx^2+cx+d$.\par
+$\begin{cases}
+        H(10;\,20) \\ E(0;\,10) \\ f'(x_H) = 0 \\ f'(x_G) = 0
+    \end{cases}
+    \Leftrightarrow
+    \begin{cases}
+        10^3a + 10^2b+10c+d = 20            \\
+        d=10                                \\
+        3\cdot 10^2a + 2\cdot 10b + 10c = 0 \\
+        3\cdot 35^2a + 2\cdot 35b + 35c = 0
+    \end{cases}
+    \Rightarrow f(x) = \dfrac{1}{475}x^3 - \dfrac{27}{190}x^2 + \dfrac{42}{19}x + 10
+$\par
+$\Rightarrow V = \dfrac{\displaystyle \pi\cdot\int_{0}^{40}f^2(x)dx}{10^3} = \dfrac{18460\pi}{2527} \approx \result{$23\, (dm^3)$}$
+\exercise{
+    \textcolor{red}{\textit{2425 -- THPT Nguyễn Bỉnh Khiêm - Hà Nội -- Lần 4}}
+
+    \begin{wrapfigure}{r}{0.25\textwidth}
+        \centering
+        \includegraphics[width=1\linewidth]{images/Ứng dụng tích phân/NBK-4.png}
+    \end{wrapfigure}
+
+    Bạn Tá Selu làm một chiếc diều từ 4 thanh tre gồm 2 thanh thẳng cùng dài $80$cm, hai thanh còn lại được uốn cong thành hai đường parabol $(P_1)$ và $(P_2)$. Bạn Tá Selu cố định 4 thanh tre trên tại 5 vị trí $A$, $B$, $C$, $M$, $O$ sao cho $OABC$ là một hình vuông, sau đó dán giấy màu để tạo thành chiếc diều (tham khảo hình vẽ).Tính diện tích phần giấy màu bạn Đặng Cao Bồ cần cắt để giúp bạn Tá Selu tạo thành chiếc diều (đơn vị $cm^2$), biết rằng điểm $M$ cách đều hai đoạn thẳng $AB$ và $BC$ một khoảng bằng $50$cm. \textit{(làm tròn kết quả đến hàng đơn vị)}
+}
+\begin{minipage}{0.65\textwidth}
+    Ta có: $
+        \begin{cases}
+            O(0;\,0),\; A(80;\,0),\; M(30;\,30) \in (P_1) \\
+            O(0;\,0),\; C(0;\,80),\; M(30;\,30) \in (P_2)
+        \end{cases}$\par
+    $\Rightarrow
+        \left\{\begin{aligned}
+             & (P_1): y = -\dfrac{1}{50}x^2 + \dfrac{8}{5}x \\
+             & (P_2): x = -\dfrac{1}{50}y^2 + \dfrac{8}{5}y
+        \end{aligned}\right.$\par
+    $\Rightarrow (P_2): \left\{\begin{aligned}
+             & y = \dfrac{-1.6 + \sqrt{1.6^2 - 4\cdot 0.02x}}{-2\cdot 0.02}                 \\
+             & y = \dfrac{-1.6 - \sqrt{1.6^2 - 4\cdot 0.02x}}{-2\cdot 0.02} < 0\, \forall x
+        \end{aligned}\right.$\par
+    $\Rightarrow S_1 = \displaystyle \int_{0}^{30}\dfrac{-1.6 + \sqrt{1.6^2 - 4\cdot 0.02x}}{-2\cdot 0.02} dx + \displaystyle \int_{30}^{80}(-\dfrac{1}{50}x^2 + \dfrac{8}{5}x)dx$\par
+    $\Rightarrow S = 80^2 - 2S_1 = \dfrac{10040}{3} \approx \result{$3347\,cm^2$}$
+\end{minipage}
+\begin{minipage}{0.25\textwidth}
+    \begin{figure}[H]
+        \includegraphics[width=1.6\textwidth]{images/Ứng dụng tích phân/NBK-4-solve.png}
+    \end{figure}
+\end{minipage}
+\newpage\section{Toán rời rạc}
 \exercise{
     \textcolor{red}{\textit{2425 -- Nguyễn Khuyến - Lê Thánh Tông}}
 
