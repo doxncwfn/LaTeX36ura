@@ -90,6 +90,8 @@ Từ đó ta có công thức xác suất đầy đủ như sau:
 \[
     P(A) = P(B) \cdot P(A | B) + P(\overline{B}) \cdot P(A | \overline{B}).
 \]
+\subsection{Bài toán chia kẹo Euler}
+\paragraph*{Phát biểu bài toán} Có $n$ chiếc kẹo và $m$ em nhỏ, có bao nhiêu cách chia kẹo cho các em nhỏ mà mỗi em được nhận ít nhất $1$ chiếc kẹo?
 \subsection{Công thức Bayes}
 Từ công thức nhân xác suất:
 \[
@@ -288,7 +290,6 @@ $\Rightarrow P(A|B) = \dfrac{P(A)\cdot P(B|A)}{P(B)} = \dfrac{P(A)\cdot (1 - P(\
     \textcolor{red}{\textit{2425 -- THPT Quỳ Hợp 2 Nghệ An -- Lần 5}}
 
     Một cơ sở sản xuất sữa giả mua các thùng sữa thật giống nhau ($48$ hộp/thùng), rồi thay thế một số hộp sữa thật thành các hộp sữa giả nhằm thu lợi bất chính. Trong quá trình sản xuất, cơ sở phân ra làm $2$ loại: loại $I$ để lẫn mỗi thùng $5$ hộp sữa giả và loại $II$ để lẫn mỗi thùng $3$ hộp sữa giả. Biết rằng số thùng sữa loại $I$ bằng $1.5$ lần số thùng sữa loại $II$. Chọn ngẫu nhiên 1 thùng sữa từ cơ sở sản xuất và từ thùng đó lấy ra ngẫu nhiên $10$ hộp. Tính xác suất để trong $10$ hộp lấy ra có đúng $2$ hộp sữa là giả \textit{(làm tròn kết quả đến hàng phần trăm)}.}
-% Gọi $x$ là số thùng sữa loại $II$ ($x\in\mathbb{N}^*$) $\Rightarrow 1.5x$ là số thúng sữa loại $I$.\par
 Gọi $A$ là biến cố ``thùng sữa được chọn thuộc loại $I$'' $\Rightarrow \begin{cases}
         P(A) = \dfrac{1.5x}{1.5x + x} \\
         P(\overline{A}) = 1 - P(A)
@@ -298,6 +299,16 @@ Gọi $B$ là biến cố ``10 hộp sữa được chọn có 2 hộp sữa gi�
         P(B|\overline{A}) = \dfrac{\displaystyle C^2_{3}\cdot C^{8}_{45}}{\displaystyle C^{10}_{48}}
     \end{cases}$.\par
 $\Rightarrow P(B) = P(A)\cdot P(B|A) + P(\overline{A})\cdot P(B|\overline{A}) = \dfrac{2052}{11891} \approx \result{$0.17$}$
+\exercise{
+    \textcolor{red}{\textit{2425 -- THPTQG -- Mã đề 0122}}
+
+    Có $4$ ngăn trong một giá để sách được đánh số thứ tự 1, 2, 3, 4 và $8$ quyển sách khác nhau. Bạn Đặng Cao Bồ xếp hết $8$ quyển sách trên vào $4$ ngăn đó sao cho mỗi ngăn có ít nhất $1$ quyển sách và các quyển sách được xếp thẳng đứng thành một hàng ngang với gáy sách quay ra ngoài ở mỗi ngăn. Thấy vậy, bạn Tá Selu đố bạn Đặng Cao Bồ xem có tất cả bao nhiêu $T$ cách xếp, nếu đoán đúng, bạn Đặng Cao Bồ sẽ scam nóng $\dfrac{T}{600}$\$. Hãy tính giúp bạn Tá Selu số tiền trên biết $2$ cách xếp của bạn Tá Selu được xem là giống nhau nếu chúng thoả mãn đồng thời cả hai điều kiện:
+    \begin{itemize}[itemsep=0pt, topsep=0pt, parsep=0pt,label=--]
+        \item Với từng ngăn, số lượng quyển sách ở ngăn đó là như nhau trong cả hai cách xếp.
+        \item Với từng ngăn, số thứ tự từ trái sang phải của các quyển sách được xếp là như nhau trong cả hai cách xếp.
+    \end{itemize}
+}
+Áp dụng bài toán chia kẹo Euler: $T = 8!\cdot\displaystyle C^3_7 = 1411200 \Rightarrow \dfrac{T}{600} = \result{$2352\$$}$
 \newpage\section{Ứng dụng tích phân}
 \exercise{
     \textcolor{red}{\textit{2425 -- Sở GDĐT Nghệ An -- Đợt 3}}
@@ -418,7 +429,7 @@ $\Rightarrow V = \dfrac{\displaystyle \pi\cdot\int_{0}^{40}f^2(x)dx}{10^3} = \df
 \end{minipage}
 \begin{minipage}{0.25\textwidth}
     \begin{figure}[H]
-        \includegraphics[width=1.6\textwidth]{images/Ứng dụng tích phân/NBK-4-solve.png}
+        \includegraphics[width=1.5\textwidth]{images/Ứng dụng tích phân/NBK-4-solve.png}
     \end{figure}
 \end{minipage}
 \newpage\section{Toán rời rạc}
@@ -426,7 +437,7 @@ $\Rightarrow V = \dfrac{\displaystyle \pi\cdot\int_{0}^{40}f^2(x)dx}{10^3} = \df
     \textcolor{red}{\textit{2425 -- Nguyễn Khuyến - Lê Thánh Tông}}
 
     Có 3 phương tiện chuyển động cùng hướng trên một đại lộ theo 3 đường thẳng song song được biểu diễn trên một mặt phẳng:
-    \begin{itemize}[itemsep=0pt, topsep=0pt, parsep=0pt,label=-]
+    \begin{itemize}[itemsep=0pt, topsep=0pt, parsep=0pt,label=--]
         \item Một ô tô con (xem như điểm $A$) chuyển động trên đường thẳng $d_1$ với tốc độ không đổi $20m/s$.
         \item Một xe container (xem như đoạn thẳng $EF$) dài $20$m ($EF=20$m) chuyển động với tốc độ không đổi $16m/s$ trên đường thẳng $d_2$ song song và cách $d_1$ một khoảng $10$m.
         \item Một xe cảnh sát (xem như điểm $P$) chuyển động với tốc độ không đổi $16m/s$ trên đường thẳng $d_3$ song song và cách $d_2$ một khoảng $10$m.
