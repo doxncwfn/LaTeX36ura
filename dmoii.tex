@@ -45,6 +45,12 @@
 \newcommand{\result}[1]{\fcolorbox{red}{white}{#1}}
 \newcommand{\divides}{\mathrel{\vdots}}
 \renewcommand{\cite}[1]{``#1''}
+\newcommand{\wrapfig}[3]{
+\noindent
+\begin{wrapfigure}{#1}{#2\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{#3}
+\end{wrapfigure}}
 \begin{document}
 
 % \coverpage\clearpage
@@ -376,7 +382,7 @@ $\Rightarrow S(t) = \displaystyle \int_{x_1}^{x_2}\dfrac{x^2}{15}dx = \left. \fr
 \exercise{
     \textcolor{blue}{\textit{2425 -- THPT Quỳ Hợp 2 Nghệ An -- Lần 5}}
 
-    Một người thợ gốm sứ muốn tạo ra một sản phẩm là bình sứ tráng men vẽ hoa văn bằng vàng 24K mang ý nghĩa phong thủy \cite{Thuận buồm xuôi gió} như hình vẽ mô tả. Để tạo ra sản phẩm bằng phương pháp bàn xoay thủ công, người đó đã thiết kế mẫu sản phẩm trên bản vẽ như sau: cắt từ tấm bìa hình chữ nhật $ABCD$ theo đường cong $EHGF$ là đường bậc 3. Đường cong này tiếp xúc cạnh $CD$ tại điểm $H$, $G$ là điểm trên đường cong gần đường thẳng $AB$ nhất, khoảng cách từ $G$ đến đường thẳng $CB$ là $5\text{cm}, AB = 40\,\text{cm}, EA = 10\,\text{cm}, DH = 10\,\text{cm}, BC = 20\,\text{cm}$.
+    Bạn Tá Selu muốn tạo ra một sản phẩm là bình sứ tráng men vẽ hoa văn bằng vàng 24K mang ý nghĩa phong thủy \cite{Thuận buồm xuôi gió} như hình vẽ mô tả. Để tạo ra sản phẩm bằng phương pháp bàn xoay thủ công, người đó đã thiết kế mẫu sản phẩm trên bản vẽ như sau: cắt từ tấm bìa hình chữ nhật $ABCD$ theo đường cong $EHGF$ là đường bậc 3. Đường cong này tiếp xúc cạnh $CD$ tại điểm $H$, $G$ là điểm trên đường cong gần đường thẳng $AB$ nhất, khoảng cách từ $G$ đến đường thẳng $CB$ là $5\text{cm}, AB = 40\,\text{cm}, EA = 10\,\text{cm}, DH = 10\,\text{cm}, BC = 20\,\text{cm}$.
 
     \begin{figure}[H]
         \centering
@@ -432,6 +438,66 @@ $\Rightarrow V = \dfrac{\displaystyle \pi\cdot\int_{0}^{40}f^2(x)dx}{10^3} = \df
         \includegraphics[width=1.5\textwidth]{images/Ứng dụng tích phân/NBK-4-solve.png}
     \end{figure}
 \end{minipage}
+\exercise{
+    \wrapfig{r}{0.2}{images/Ứng dụng tích phân/BN.png}
+    \textcolor{red}{\textit{2425 -- Sở Bắc Ninh}}
+
+    Trong cơ khí chế tạo, một chi tiết máy hình đĩa tròn có dạng như hình vẽ bên, nhận $AB$ và $CD$ làm các trục đối xứng. Người ta cần phủ sơn cả hai mặt của chi tiết. Biết rằng đường tròn lớn có bán kính $5\,dm$, các đường tròn nhỏ đều có bán kính bằng $2\, dm$, $AB=CD=4\,dm$ và chi phí sơn là $103000$ đồng/$m^2$. Chi phí để sơn hoàn thiện chi tiết máy bằng bao nhiêu nghìn đồng \textit{(làm tròn đến hàng đơn vị)}?
+}
+\wrapfig{l}{0.3}{images/Ứng dụng tích phân/BN-solve.png}
+Chọn hệ trục toạ độ như hình vẽ, ta có:\par
+$\begin{cases}
+        (O): x^2 + y^2 = 5^2 \\
+        (I): (x-4)^2 + y^2 = 2^2
+    \end{cases} \Rightarrow \begin{cases}
+        M(\dfrac{37}{8}; \dfrac{\sqrt{231}}{8}) = (O)\cup (I) \\
+        N(5;\,0) = (O)\cup Ox
+    \end{cases}$\par
+$\Rightarrow S = 5^2\pi - 4\cdot 2\cdot (S_1+S_2)$\par
+$= 25\pi-8\cdot\left(\displaystyle\int_{2}^{\frac{37}{8}}\sqrt{4-(x-4)^2}dx + \displaystyle\int_{\frac{37}{8}}^{5}\sqrt{25-x^2}dx \right)$\par
+$\Rightarrow T = 1.03\cdot 2S \approx \result{$82$ nghìn đồng}$
+\exercise{
+    \wrapfig{r}{0.25}{images/Ứng dụng tích phân/NK.png}
+    \textcolor{red}{\textit{2425 -- Nguyễn Khuyến - Lê Thánh Tông}}
+
+    Bạn Khả Seni vừa mê học toán, vừa mê bạn Đặng Cao Bồ lớp bên cạnh. Ngày sinh nhật Khả Seni thì bạn Đặng Cao Bồ ấy đã tặng cho Khả Seni một tờ giấy, trong đó có vẽ hai hình elip ghép lại tạo ra hình trái tim rất đẹp. Phần hai cánh có diện tích $S_1,\, S_2$ được tô màu vàng, phần có diện tích $S_3,\, S_4,\, S_5,\, S_6$ được tô màu đỏ. Khả Seni vui vẻ đón nhận \cite{món quà} nhưng sau đó lại tỏ ra khó hiểu. Một người bạn đã tư vấn cho Khả Seni rằng màu đỏ tượng trưng cho tình yêu, màu vàng lại tương trưng cho tình bạn, bây giờ chỉ còn cách tính tỷ số $\dfrac{S_3 + S_4 + S_5 + S_6}{S_1 + S_2}$ bằng bao nhiêu mới biết Crush thực sự có tình cảm với Khả Seni hay chỉ xem Khả Seni là bạn, các em hãy tính giúp bạn Khả Seni tỷ số trên \textit{(làm tròn kết quả đến hàng phần trăm)}; biết rằng khoảng cách từ điểm O đến giao điểm của hai elip bằng 1.8 cm.
+}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.4\textwidth]{images/Ứng dụng tích phân/NK-solve.png}
+% \end{figure}
+% \wrapfig{l}{0.2}{images/Ứng dụng tích phân/NK-solve.png}
+\noindent
+\begin{wrapfigure}{l}{0.23\textwidth}
+    \centering
+    \includegraphics[width=1.46\linewidth]{images/Ứng dụng tích phân/NK-solve.png}
+\end{wrapfigure}
+Chọn hệ trục toạ độ ứng với 2 đường phân giác góc phần tư như hình vẽ\par
+Ta có:
+$M,\,N\in(E_1): \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1 \Rightarrow
+    \begin{cases}
+        \dfrac{(-2\sqrt{2})^2}{a^2} + \dfrac{0^2}{b^2} = 1 \\[6pt]
+        \dfrac{(-1.8:\sqrt{2})^2}{a^2} + \dfrac{(-1.8:\sqrt{2})^2}{b^2} = 1
+    \end{cases}$\par
+$\Rightarrow
+    \begin{cases}
+        \dfrac{1}{a^2} = \dfrac{1}{8} \\[6pt]
+        \dfrac{1}{b^2} = \dfrac{319}{648}
+    \end{cases} \Rightarrow
+    \begin{cases}
+        (E_1): \dfrac{x^2}{8} + \dfrac{319}{648}\cdot y^2 = 1 \\[6pt]
+        (E_2): \dfrac{319}{648}x^2 + \dfrac{y^2}{8} = 1
+    \end{cases} \Rightarrow
+    \begin{cases}
+        f_1(x) = \sqrt{\dfrac{648}{319}(1-\dfrac{x^2}{8})} \\[6pt]
+        f_2(x) = \sqrt{8(1-\dfrac{319}{648}x^2)}
+    \end{cases}$\par
+$\Rightarrow
+    \begin{cases}
+        S_3+S_4+S_5+S_6= \left(2\cdot\dfrac{1.8}{\sqrt{2}}\right)^2 + 8\cdot\displaystyle\int_{x_A}^{x_B}f_2(x)dx \\[6pt]
+        S_1 + S_2 = 4\left(\displaystyle\int_{x_A}^{x_B}(f_1(x) - f_2(x))dx + \displaystyle\int_{x_B}^{2\sqrt{2}}f_1(x)dx \right)
+    \end{cases}$\par
+$\Rightarrow \dfrac{S_3 + S_4 + S_5 + S_6}{S_1 + S_2} \approx \result{$1.46$}$
 \newpage\section{Toán rời rạc}
 \exercise{
     \textcolor{red}{\textit{2425 -- Nguyễn Khuyến - Lê Thánh Tông}}
